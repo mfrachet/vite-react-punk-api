@@ -9,13 +9,18 @@ const LazyBeerDetail = lazy(() => import("./pages/BeerDetail"));
 
 const queryClient = new QueryClient();
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <LazyHome />,
+    },
+    { path: "beers/:id", element: <LazyBeerDetail /> },
+  ],
   {
-    path: "/",
-    element: <LazyHome />,
-  },
-  { path: "beers/:id", element: <LazyBeerDetail /> },
-]);
+    basename: import.meta.env.BASE_URL,
+  }
+);
 
 export const App = () => {
   return (

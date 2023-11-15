@@ -26,6 +26,8 @@ jobs:
 
       - name: Build project
         run: pnpm run build
+        env:
+          BASE_URL: /vite-react-punk-api/
 
       - name: Publish github pages
         run: |
