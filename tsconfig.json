@@ -23,7 +23,7 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "typeRoots": ["./src/ui/themes"]
+    "typeRoots": ["./src/ui/themes/styled.d.ts"]
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
