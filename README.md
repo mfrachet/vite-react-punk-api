@@ -3,6 +3,16 @@
 - API: https://punkapi.com/
 - Demo website: https://mfrachet.github.io/vite-react-punk-api/
 
+## Installation
+
+```sh
+$ git clone https://github.com/mfrachet/vite-react-punk-api
+$ cd vite-react-punk-api
+$ pnpm i
+$ pnpm run dev # build|preview
+```
+
+
 ## TODO
 
 - [x] Display on the homepage a data list of 10-15 items
